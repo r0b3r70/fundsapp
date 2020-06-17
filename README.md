@@ -11,5 +11,5 @@ npm install
 npm run start
 ```
 
-![screenshot](screenshot1.png)
-![screenshot](screenshot2.png)
+<img src="screenshot1.png" width="500px" />
+<img src="screenshot2.png" width="500px" />
