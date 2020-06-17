@@ -1,6 +1,7 @@
 # Investment app example
 
-Showcase project.
+Showcase project. Rome wasn't built in a day. This app has.
+
 
 ## Project setup
 ```
