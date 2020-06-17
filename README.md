@@ -1,5 +1,6 @@
 # Investment app example
 
+Showcase project.
 
 ## Project setup
 ```
