@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funds app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./resources/c3.min.css" />
+</head>
+<body id="body">
+
+    <nav>
+        <div class="hamburger">
+        </div>
+    </nav>
+
+    <section id="main">
+            <h1><span>&euro;</span> 8.135<span>,46</span></h1>
+            <h2>+ &euro; 262,32 | 3,2%</h2>
+    </section>
+
+    <section id="graph">
+        <div id="chart"></div>
+        <div id="chartNav">
+            <button data-button="day" class="chartbutton">1D</button>
+            <button data-button="week" class="chartbutton">1W</button>
+            <button data-button="month" class="chartbutton">1M</button>
+            <button data-button="halfYear" class="chartbutton">6M</button>
+            <button data-button="year" class="selected chartbutton">1J</button>
+            <button data-button="all" class="chartbutton">ALLES</button>
+        </div>
+    </section> 
+
+    <section id="stocks">
+
+        <div class="stock">
+            <div class="value">&euro; 1.443,0</div>
+            <h3>TSLA</h3>
+            <div class="details">5 stuks à &euro;288,60 </div>
+            <div class="status ok">+ 1.900</div>
+        </div>
+        
+        <div class="stock">
+            <div class="value">&euro; 3.443,00</div>
+            <h3>BlackRock World Index</h3>
+            <div class="details">20 stuks à &euro;172,15 </div>
+            <div class="status bad">- 49.21</div>
+        </div>
+
+        <div class="stock">
+            <div class="value">&euro; 923,34</div>
+            <h3>Vanguard US 500 Index</h3>
+            <div class="details">4 stuks à &euro;115,41 </div>
+            <div class="status ok">+ 25.00</div>
+        </div>        
+
+    </section>
+
+    <script src="./resources/d3.v3.min.js"></script>
+	<script src="./resources/c3.min.js"></script>
+	<script src="./src/app.js"></script>
+</body>
+</html> 

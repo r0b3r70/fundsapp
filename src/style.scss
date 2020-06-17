@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(#61cb78, #36D1DC) no-repeat fixed;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2 { font-weight: 100; }
+h1 {
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    span { font-size: 38px;}
+}
+
+h2 { margin-top: 10px; font-size: 14px; }
+
+button:focus { outline:0; }
+
+.hamburger {
+    padding: 10px 0 0 15px;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+#main {
+    text-align: center;
+}
+#chart {
+    margin: 0;
+    padding: 0;
+}
+#chartNav {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 15px 0;
+    button {
+        cursor: pointer;
+        border-radius: 5px;
+        min-width: 40px;
+        font-size: 14px;
+        color: white;
+        border: 0;
+        background-color: transparent;
+        padding: 5px;
+        margin-right: 10px;
+        &.selected {
+            border: 1px solid white;
+            background-color: white;
+            color: #61cb78;
+        }
+    }
+}
+
+#stocks {
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    margin: 10px;
+    .stock {
+        box-shadow:0 2px 5px rgba(0,0,0, 0.2);
+        color: #444;
+        height: 100px;
+        background-color: white;        
+        padding: 15px;
+        margin-bottom: 10px;
+        h3 {
+            font-size: 16px;
+            margin: 7px 0 10px 0;
+        }
+        .details {
+            font-size: 12px;
+            letter-spacing: 0.07em;
+            color: #999;
+            padding: 0 0 5px 0;
+        }
+        .status {
+            font-size: 1em;
+            position: relative;
+            float: right;
+            padding: 3px 7px;
+            margin: 7px 0 10px 0;
+            color: #fff;
+        }
+        .ok {
+            background-color:rgba(84,197,108, 1);
+        }
+        .bad {
+            background-color:rgb(235, 77, 61);
+        }
+        .value {
+            font-size: 26px;
+            float: right;
+        }
+    }
+}
+
+.halfYear {
+    background: linear-gradient(#eb4d3d, #fd868c, #fe9a8b) no-repeat fixed;
+    #chartNav {
+        button {
+            &.selected {
+                color: #fd868c;
+            }
+        }
+    
+    }
+}
